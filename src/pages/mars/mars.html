@@ -1,0 +1,40 @@
+<!--
+  Generated template for the MarsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Mars Imagery from the rovers past and present</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!--The Mars API showing images from Mars-->
+  <h1>Image of mars landscape on 9/4/2019 by Curiosity</h1>
+  <ion-list>
+    <ion-item *ngFor="let x of marsImage">
+      <img ngif="this.marsImage.splice(22)" src="{{ x.img_src }}" alt="Mars">
+
+    </ion-item>
+  </ion-list>
+  <!--facts about the Curiosity Rover on Mars and future rovers-->
+  <h2>facts about Curiosity</h2>
+  <p>Curiosity is a car-sized rover designed to explore the crater Gale on Mars as part of NASA's Mars Science
+    Laboratory mission
+    (MSL). Curiosity was launched from Cape Canaveral on November 26, 2011, at 15:02 UTC and landed on Aeolis Palus
+    inside
+    Gale on Mars on August 6, 2012, 05:17 UTC. The Bradbury Landing site was less than 2.4 km (1.5 mi) from the center
+    of the rover's touchdown target after a 560 million km (350 million mi) journey. The rover's goals include an
+    investigation of the Martian climate and geology; assessment of whether the selected field site inside Gale has ever
+    offered environmental conditions favorable for microbial life, including investigation of the role of water; and
+    planetary habitability studies in preparation for human exploration</p>
+
+  <p>In December 2012, Curiosity's two-year mission was extended indefinitely, and on August 5, 2017, NASA celebrated
+    the fifth
+    anniversary of the Curiosity rover landing. The rover is still operational, and as of April 10, 2019, Curiosity has
+    been on Mars for 2373 sols (2437 total days) since landing on August 6, 2012. It is one of two active missions on
+    Mars with
+    a new rover planned for 2020.</p>
+</ion-content>

@@ -1,0 +1,47 @@
+<!--
+  Generated template for the IssPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>ISS Facts</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Facts of the ISS</h1>
+  <!--Using an API to show how many people are on the ISS and who they are-->
+  <h3>People on the ISS right now:</h3>
+  <ion-list>
+    <ion-item *ngFor="let x of issTracker">
+      <h1>Who: {{x.name}}</h1>
+    </ion-item>
+  </ion-list>
+  <!--Image of the ISS-->
+  <img src="https://www.nasa.gov/images/content/329096main_earthday1_420.jpg" alt="ISS_Pic">
+
+  <!--Facts about the ISS-->
+  <p>The International Space Station (ISS) is a space station, or a habitable artificial satellite, in low Earth orbit.
+    Its first
+    component was launched into orbit in 1998, with the first long-term residents arriving in November 2000. It has been
+    inhabited
+    continuously since that date. The last pressurised module was fitted in 2011, and an experimental inflatable space
+    habitat
+    was added in 2016. </p>
+
+  <p>The station is expected to operate until 2030. Development and assembly of the station continues, with
+    several new elements scheduled for launch in 2019. The ISS is the largest human-made body in low Earth orbit and can
+    often
+    be seen with the naked eye from Earth. </p>
+
+  <p>The ISS consists of pressurised habitation modules, structural trusses,solar arrays, radiators, docking ports,
+    experiment bays
+    and robotic arms. ISS components have been launched by Russian Proton and Soyuz rockets and American Space Shuttles.
+  </p>
+
+  <p>The ISS serves as a microgravity and space environment research laboratory in which crew members conduct
+    experiments in biology,
+    human biology, physics, astronomy, meteorology, and other fields.</p>
+</ion-content>
